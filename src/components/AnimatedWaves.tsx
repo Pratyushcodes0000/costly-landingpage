@@ -24,7 +24,7 @@ export function AnimatedWaves() {
         >
           <animate
             attributeName="d"
-            dur="1s"
+            dur="10s"
             repeatCount="indefinite"
             values="
               M0,400 C320,450 640,350 960,400 C1280,450 1440,400 1440,400 L1440,800 L0,800 Z;
@@ -40,7 +40,7 @@ export function AnimatedWaves() {
         >
           <animate
             attributeName="d"
-            dur="1s"
+            dur="15s"
             repeatCount="indefinite"
             values="
               M0,480 C360,520 720,440 1080,480 C1320,500 1440,480 1440,480 L1440,800 L0,800 Z;
@@ -57,7 +57,7 @@ export function AnimatedWaves() {
         >
           <animate
             attributeName="d"
-            dur="1s"
+            dur="20s"
             repeatCount="indefinite"
             values="
               M0,560 C400,590 800,530 1200,560 C1360,575 1440,560 1440,560 L1440,800 L0,800 Z;

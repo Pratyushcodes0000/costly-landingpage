@@ -11,11 +11,16 @@ import {
   Activity,
   FileText,
   Users,
-  DollarSign,
-  Italic
+  Github
 } from "lucide-react";
 
 export default function App() {
+  // Placeholder for GitHub OAuth login logic
+  const handleGithubLogin = () => {
+    // TODO: Implement GitHub OAuth login
+    console.log('GitHub login clicked');
+  };
+
   const features = [
     {
       icon: Code2,
@@ -82,8 +87,13 @@ export default function App() {
               <a href="#features" className="text-zinc-400 hover:text-white transition-colors">Features</a>
               <a href="#pricing" className="text-zinc-400 hover:text-white transition-colors">Pricing</a>
               <a href="#docs" className="text-zinc-400 hover:text-white transition-colors">Docs</a>
-              <Button variant="outline" className="border-zinc-700 text-white hover:bg-zinc-800">
-                Sign In
+              <Button 
+                variant="outline" 
+                className="border-zinc-700 !text-white hover:bg-zinc-800 hover:!text-white"
+                onClick={handleGithubLogin}
+              >
+                <Github className="w-4 h-4 mr-2" />
+                Log In
               </Button>
               <Button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600">
                 Get Started
@@ -100,13 +110,15 @@ export default function App() {
               <span className="text-sm text-zinc-400">Now with real-time analytics</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl italic text-white bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-              Costly
+            <h1 className="text-5xl md:text-7xl bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
+              API Management,
               <br />
-              
+              Simplified.
             </h1>
+            
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-             One‑dashboard to track all your API bills (AI, cloud, SMS, payment),with real‑time cost forecasting, alerts and cost‑saving recommendations,built for devs & small teams.
+              Manage, monitor, and monetize your APIs with a powerful platform built for developers. 
+              Track usage, automate billing, and scale with confidence.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -119,7 +131,7 @@ export default function App() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-zinc-700 text-white hover:bg-zinc-800 w-full sm:w-auto"
+                className="border-zinc-700 !text-white hover:bg-zinc-800 hover:!text-white w-full sm:w-auto"
               >
                 View Demo
               </Button>
@@ -127,16 +139,16 @@ export default function App() {
             
             <div className="flex items-center justify-center space-x-8 pt-8 text-sm text-zinc-500">
               <div className="flex items-center space-x-2">
-                <Shield className="w-4 h-8" />
+                <Shield className="w-4 h-4" />
                 <span>SOC 2 Compliant</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Zap className="w-4 h-4" />
-                <span>20+ APIs Listed</span>
+                <span>99.99% Uptime</span>
               </div>
               <div className="flex items-center space-x-2">
-                <DollarSign className="w-4 h-4" />
-                <span>40% reduction in Cost</span>
+                <Users className="w-4 h-4" />
+                <span>10K+ Developers</span>
               </div>
             </div>
           </div>

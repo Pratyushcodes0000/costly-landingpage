@@ -1,7 +1,8 @@
 
   # API Management Landing Page
 
-  This is a code bundle for API Management Landing Page.
+  This is a code bundle for API Management Landing Page. The original project is available at https://www.figma.com/design/mFSu4FfNHIMeuDDoesSyzO/API-Management-Landing-Page.
+
   ## Running the code
 
   Run `npm i` to install the dependencies.
