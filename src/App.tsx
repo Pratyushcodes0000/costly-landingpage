@@ -87,8 +87,13 @@ export default function App() {
               <a href="#features" className="text-zinc-400 hover:text-white transition-colors">Features</a>
               <a href="#pricing" className="text-zinc-400 hover:text-white transition-colors">Pricing</a>
               <a href="#docs" className="text-zinc-400 hover:text-white transition-colors">Docs</a>
-              <Button variant="outline" className="border-zinc-700 no-inherit-color hover:bg-zinc-800">
-                Sign In
+              <Button 
+                variant="outline" 
+                className="border-zinc-700 no-inherit-color hover:bg-zinc-800 hover:!text-white"
+                onClick={handleGithubLogin}
+              >
+                <Github className="w-4 h-4 mr-2" />
+                Log In
               </Button>
               <Button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600">
                 Get Started
@@ -126,7 +131,7 @@ export default function App() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-zinc-700 no-inherit-color hover:bg-zinc-800 w-full sm:w-auto"
+                className="border-zinc-700 no-inherit-color hover:bg-zinc-800 hover:!text-white w-full sm:w-auto"
               >
                 View Demo
               </Button>
