@@ -14,10 +14,13 @@ import {
   Github
 } from "lucide-react";
 
+ const client_id = `Ov23lixtSj69DrEQj0c1`;
+
 export default function App() {
   // Placeholder for GitHub OAuth login logic
   const handleGithubLogin = () => {
     // TODO: Implement GitHub OAuth login
+   window.location.assign(`https://github.com/login/oauth/authorize?client_id=${client_id}`)
     console.log('GitHub login clicked');
   };
 
@@ -92,7 +95,7 @@ export default function App() {
                 className="border-zinc-700 no-inherit-color hover:bg-zinc-800 hover:!text-white"
                 onClick={handleGithubLogin}
               >
-                <Github className="w-4 h-4 mr-2" />
+                <Github className="w-4 h-4 mr-2"/>
                 Log In
               </Button>
               <Button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600">
